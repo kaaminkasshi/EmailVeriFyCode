@@ -1,0 +1,13 @@
+
+
+<html>
+<body>
+  <h2>Email Verification</h2>
+  <p>Verification code sent to <%= email %>.</p>
+  <form action="/verify" method="post">
+    Verification Code: <input type="text" name="verificationCode" required><br>
+    <input type="hidden" name="email" value="<%= email %>">
+    <button type="submit">Verify</button>
+  </form>
+</body>
+</html>
